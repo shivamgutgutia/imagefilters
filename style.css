@@ -1,0 +1,47 @@
+#mainHeading{
+  text-align:left;
+  font: 50px arial;
+  color:Tomato;
+  margin-bottom:0px;
+}
+
+#designedBy{
+  font:10px arial;
+  margin-left:320px;
+  margin-top:0px;  
+}
+
+canvas{
+  widtht:500px;
+  height:300px;
+  border:2px solid black;
+}
+
+#inputCanvas{
+  /*margin-left:150px;*/
+}
+
+p{
+  /*margin-left: 550px;*/
+  font: 20px arial;
+  margin-bottom:0px;
+  margin-top:10px;
+}
+
+input{
+  font: 20px arial;
+  border: 1px solid black;
+}
+
+body{
+  background-color:#e3e0cf;
+}
+
+#filters input{
+  border-radius:30%;
+  background-color:lightgrey; 
+}
+
+#warning{
+  color:red;
+}

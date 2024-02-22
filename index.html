@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Image Filters</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<html>
+  <head>
+    <title> Filters </title>
+  </head>
+  <body>
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+  </script>
+    <div id=headingDiv>
+    <h1 id="mainHeading"> FUN WITH FILTERS </h1>
+    <h6 id="designedBy"> designed by Shivam Gutgutia </h6>
+    </div>
+    
+    <div id="canvasDiv">
+      <canvas id="inputCanvas">
+      </canvas>
+      <canvas id="outputCanvas">
+      </canvas>
+    </div>
+    
+    <div>
+      <p id="loadImage"> <b>Load Image:</b>
+      <input type="file" multiple="false"           accept="image/*" id="inputImage"               onchange="loadImage()">
+      </p>
+      
+      <p id="resetImage"> <b>Reset Image:</b>       <input type="button" value="Reset"             id="resetImage" onclick="resetImage()">
+      </p>
+      
+      <p id="resetFilters"> <b>Reset Filter:       </b>  <input type="button" value="Reset"       id="resetFilters"                             onclick="resetFilters()">              
+      </p>
+      <p id="warning"><em>Note: Please wait for a few seconds after clicking on a button for the output</em></p> 
+    </div>
+    <div id="filters">
+      <p> <b>Color Filters: </b>
+        <input type="button" value="B&W"   id="blackWhite" onclick="blackWhite()">
+        <input type="button" value="Red"   id="red" onclick="red()">
+        <input type="button" value="Green"   id="green" onclick="green()">
+        <input type="button" value="Blue"   id="blue" onclick="blue()">
+        <input type="button" value="Majenta"   id="majenta" onclick="majenta()"> 
+      </p>
+      <p><b>Other Filters:</b>
+        <input type="button" value="Rainbow"   id="rainbow" onclick="rainbow()">
+      </p>
+      <p>
+        <b>Blur Meter:</b>
+        <input type="range" value="0" min="0" max="20"  id="blurRange" onchange="blurr()"/>
+      </p>
+      <p> <b>Flip Image: </b>
+        <input type="button" value="Flip Horizontally"   id="flipHorizontally" onclick="flipH()">
+        <input type="button" value="Flip Vertically"   id="flipVertically" onclick="flipV()">
+      </p>
+    </div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
